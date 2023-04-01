@@ -17,13 +17,13 @@ class Device {
 }
 
 
-class TV extends Device{
+class Tv extends Device{
     constructor(platform, amper, volt) {
         super(volt,amper),
         this.tv_platform = platform
     }
 }
-const tv = new TV('Tizen',3,220)
+const tv = new Tv('Tizen',3,220)
 console.log(tv)
 tv.deviceStatus(true, 'телик')
 
