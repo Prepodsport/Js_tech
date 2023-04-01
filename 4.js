@@ -11,7 +11,7 @@ function Device(amper,volt) {
     }
 }
 
-function TV(platform){
+function Tv(platform){
     this.tv_platform = platform
 }
 
@@ -19,12 +19,12 @@ function Battery(section){
     this.battery_section = section
 }
 
-TV.prototype = new Device(3,220)
+Tv.prototype = new Device(3,220)
 Battery.prototype = new Device(2,220)
 
 
 
-const tv = new TV('Tizen')
+const tv = new Tv('Tizen')
 const battery = new Battery('5 секций')
 
 
